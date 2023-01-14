@@ -57,10 +57,12 @@ body{
   margin-top: 1px;
   height: 190px;
   
+  
 }
 
 .img_logo{
   width: 300px;
+  
 }
 
 
@@ -139,7 +141,7 @@ body{
   padding:30px;
   border-radius: 25px;
   box-shadow: 20px 20px 60px #c5c5c5,
-     -20px -20px 60px #ffffff;
+     20px 20px 60px #ffffff;
   
 }
 
@@ -201,7 +203,7 @@ button  {
 
 
 .welcome {
-  width: 600px;
+  max-width: 600px;
   height: 100px;
   margin-top: 30px;
   margin-left: 470px;
@@ -212,6 +214,7 @@ button  {
   place-items: center;
   overflow: hidden;
   border-radius: 20px;
+  
 }
 
 .welcome h2 {
