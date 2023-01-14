@@ -142,8 +142,6 @@ body{
 }
 
 
-
-
 button  {
   width: 9em;
   height: 3em;
@@ -200,16 +198,6 @@ button  {
 
 
 
-.welcome_description{
-  width: 600px;
-  padding: 150px;
-  margin-left: 280px;
-
-}
-
-
-
-
 .welcome {
   width: 600px;
   height: 100px;
@@ -258,14 +246,3 @@ button  {
   inset: 5px;
   border-radius: 15px;
 }  
-
-.Headline{
-  height: 50px;
-  margin-top: 50px;
-  margin-left: 610px;
-}
-
-.welcome_description1{
-  width: 500px;
-  margin-left: 510px;
-}
