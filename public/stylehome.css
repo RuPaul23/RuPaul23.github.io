@@ -1,0 +1,33 @@
+    .container {
+      width: 100%;
+      padding: 0 16px;
+    }
+    /* Add styles for different screen sizes */
+    @media (min-width: 600px) {
+      .container {
+        max-width: 600px;
+      }
+    }
+    @media (min-width: 900px) {
+      .container {
+        max-width: 900px;
+      }
+    }
+  
+
+    .Introduction {
+        inline-size: 90px;
+
+    }
+    .text-white {
+      --tw-text-opacity: 1;
+      color: rgb(255 255 255/var(--tw-text-opacity));
+    }
+    *, ::after, ::before {
+      box-sizing: border-box;
+      border: 0 solid #c0c1c6;
+    }
+    element {
+      font-size: 30px;
+      line-height: 36px;
+    }

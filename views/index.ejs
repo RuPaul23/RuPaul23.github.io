@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>tools4free.me</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+        <body>
+            <header class="header">
+                <nav class="nav_bar">
+                    <a href="home.ejs">
+                        <img src="Tools4free.png" class="nav_logo">
+                    </a>
+
+                    <div class="nav_items">
+                        <button><p class="nav_item">Home</a></p></button>
+                        <button><p class="nav_item">Search</a></p></button>
+                        <button><p class="nav_item">Add-On</a></p></button>
+                        <button><p class="nav_item">Cutter</a></p></button>
+                        <button><p class="nav_item">Shortener</a></p></button>
+                        <button><p class="nav_item">FAQ</a></p></button>
+                    </div>
+                </nav>        
+            </header>
+
+            <div class="top-container">
+                <form action="/convert-mp3" method="POST" id="form">
+            
+                    <div class="welcome">
+                        <h2>Welcome to tools4free.me</h2>
+                    </div>
+
+                    <section class="main">    
+
+                        <div class="txt">
+                            <p>Please insert a valid Video URL</p>
+                        </div>
+
+                        <div>
+                            <input type="text" name="videoID" class="input" placeholder="Paste the link here....">
+                            <a href="#"><button id="convert-btn" class="bttn">Convert</button></a>
+                        </div>
+                        <!--
+                        <div>
+                            <p><a href="#"><button class="btns btn1">MP3</button></a>
+                            <a href="#"><button class="btns btn2">MP4</button></a></p>
+                        </div>
+                        -->
+                    </section> 
+                </form>        
+            </div>
+
+
+            <div class="bottom-container">
+                <% if(typeof sucess != "undefined" && sucess) 
+                    { %>
+                        <div class="success">
+                            <p><%=song_title%></p>
+                            <a href="<%= song_link %>"><button class="download" id="download-btn">DOWNLOAD</button></a>
+                        </div>
+                    <%} 
+                    else if(typeof sucess!="undefined" && !sucess)
+                    { %>
+                        <div class="errors">
+                            <button_error><%=message%></button_error>
+                        </div>
+                    <% } 
+                %> 
+            </div>
+
+        </body>
+</html>
+    
